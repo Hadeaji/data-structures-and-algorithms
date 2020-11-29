@@ -1,5 +1,13 @@
-# 401 Python Data Structures and Algorithms
 
-Should be copied and moved to course repo as a reference folder for student's code challenge submissions.
+# Reverse an Array
+reversing the list items in order
 
-**NOTE:** may be replaced by cross course dsa repo
+## Challenge
+reversing a list without using the vuilt-in command `reverse()`
+
+## Approach & Efficiency
+reversing the items by using insert or using the nested loops.
+time=>O(n) space=>O(n)
+
+## Solution
+![image](assets/array-reverse.jpeg)
