@@ -34,3 +34,18 @@ time=>O(n) space=>O(n)
 
 ## Solution
 ![image](assets/array-shift.jpeg)
+
+----------------------------------------------------------------------
+
+# 3- Array Binary Search
+Searching In an array for the index of a value with the binary search method
+
+## Challenge
+Searching In an array for the index of a value with the binary search method without using any build-in functions
+
+## Approach & Efficiency
+finding the middle point of the array the checking if the value == or < ot > from the value of  the middle then moving toward the value using the same method over and over again till it finds it
+time=>O(n) space=>O(n)
+
+## Solution
+![image](assets/array_binary_search.jpeg)
