@@ -22,6 +22,57 @@ class LinkedList:
             new_node.next = self.head
             self.head = new_node
 
+    def append(self,value):
+        new_node = Node(value)
+
+        if self.head == None:
+            self.head = new_node
+        else:
+            current = self.head
+
+            while current.next:
+                current = current.next
+            
+            current.next = new_node
+
+    def insertBefore(self,value, newVal):
+        new_node = Node(newVal)
+
+        current = self.head
+
+        if current.value == value:
+            new_node.next = current
+            self.head = new_node
+        else:
+            while current.next:
+
+                if current.next.value == value:
+                    new_node.next = current.next
+                    current.next = new_node
+                    break
+                current = current.next
+                
+                if current.next == None:
+                    raise Exception("Sorry Couldn't Find The Value")
+                 
+
+    def insertAfter(self,value, newVal):
+        new_node = Node(newVal)
+
+        current = self.head
+
+        while current:
+
+            if current.value == value:
+                new_node.next = current.next
+                current.next = new_node
+                break
+
+            current = current.next
+
+            if current == None:
+                raise Exception("Sorry Couldn't Find The Value")
+
     def includes(self,value):
         if self.head != None:
             current = self.head
@@ -45,8 +96,13 @@ class LinkedList:
         
         return result
 
-if __name__ == "__main__":
-    ll=LinkedList()
-    ll.insert(9)
-    ll.insert(4)
-    print(ll.includes(9))
+# if __name__ == "__main__":
+#     ll=LinkedList()
+#     ll.insert(9)
+#     ll.insert(4)
+#     ll.insert(3)
+#     ll.insert(5)
+#     ll.insert(5)
+#     ll.append(0)
+#     ll.insertBefore(10,2)
+#     print(str(ll))
