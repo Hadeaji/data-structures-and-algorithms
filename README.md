@@ -6,7 +6,10 @@
 | *Challenge01* |[Reverse an Array](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/array_reverse/array_reverse.py)|
 | *Challenge02* |[Array Shift](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/array_shift/array_shift.py)|
 | *Challenge03* |[Array Binary Search](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/array_binary_search/array_binary_search.py)|
-| *Challenge04* |[Singly Linked List](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
+| *Challenge04* | **WhitBoard Exam** |
+| *Challenge05* |[Singly Linked List](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
+| *Challenge06* |[Linked list insertions](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
+
 
 
 # 1- Reverse an Array
@@ -71,3 +74,21 @@ created the class to create the node inside the linked list
 for the insert it will create a node sets the next value as the head value and resets the head
 for the search it is a while loop as long as the current equal True
 and the str loops over the items and prints them
+
+----------------------------------------------------------------------
+
+# 4- Linked list insertions
+Inserting to a linked list using diffrent kind of methods in order to insert new nodes in the desired spot
+
+## Challenge Description
+writing some methods to insert to the linked list before or after or at the end of a list without using built-in functions
+
+## Approach & Efficiency
+for before and after it will be a loop to search for the item then insert before or after it
+and to insert at the end it will loop to the end of the LL then insert the node
+time=>O(n) space=>O(n)
+
+## API
+for before and after it will be a loop to search for the item then change the .next value for both the new item and the current item to insert before or after it
+and to insert at the end it will loop to the end of the LL then insert the node and change the .next for the current item
+
