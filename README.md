@@ -9,8 +9,9 @@
 | *Challenge04* | **WhitBoard Exam** |
 | *Challenge05* |[Singly Linked List](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
 | *Challenge06* |[Linked list insertions](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
+| *Challenge07* |[Value From The End Of LL](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
 reversing the list items in order
@@ -57,7 +58,7 @@ time=>O(n) space=>O(n)
 
 ----------------------------------------------------------------------
 
-# 4- Singly Linked List
+# 5- Singly Linked List
 Type of Data structure application where data in the list are considered to be nodes, each node have its value and a refarence to the next node in the list
 and the fist node in the list called head
 
@@ -77,7 +78,7 @@ and the str loops over the items and prints them
 
 ----------------------------------------------------------------------
 
-# 4- Linked list insertions
+# 6- Linked list insertions
 Inserting to a linked list using diffrent kind of methods in order to insert new nodes in the desired spot
 
 ## Challenge Description
@@ -91,4 +92,19 @@ time=>O(n) space=>O(n)
 ## API
 for before and after it will be a loop to search for the item then change the .next value for both the new item and the current item to insert before or after it
 and to insert at the end it will loop to the end of the LL then insert the node and change the .next for the current item
+
+----------------------------------------------------------------------
+
+# 7- Value From The End Of LL
+Finding the value of a giving Index starting from the last item
+
+## Challenge Description
+Implement a function that finds a value from a LL starting the index numbering from the last item to the first
+
+## Approach & Efficiency
+To do so I looped over the LL then converting it to normal list then reversed the list
+time=>O(n) space=>O(n)
+
+## API
+I looped over the LL then converting it to normal list by assigning the values to a variable then reversed the list using basic method then called the item using the index value given
 
