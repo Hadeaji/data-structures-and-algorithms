@@ -73,6 +73,26 @@ class LinkedList:
             if current == None:
                 raise Exception("Sorry Couldn't Find The Value")
 
+    def kthFromEnd(self,value):
+        try:
+            if value < 0:
+                raise Exception
+        except Exception:
+            return ("Sorry Do Not Accept Negative Values")
+        result=[]
+        current = self.head
+        if current == None:
+            raise Exception("Sorry Your LL Is Empty")
+        while current:
+            result += [current.value]
+            current = current.next
+            if current == None:
+                break
+        try:
+            return result[::-1][value]
+        except IndexError:
+            return ("Sorry Your Input Is Out Of Range")
+    
     def includes(self,value):
         if self.head != None:
             current = self.head
@@ -104,5 +124,5 @@ class LinkedList:
 #     ll.insert(5)
 #     ll.insert(5)
 #     ll.append(0)
-#     ll.insertBefore(10,2)
-#     print(str(ll))
+#     print(ll)
+#     print(ll.kthFromEnd(7))

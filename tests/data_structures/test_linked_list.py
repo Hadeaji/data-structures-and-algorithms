@@ -56,6 +56,32 @@ def test_ll_insert_after_last(fixed_list):
     assert str(fixed_list) == f'{{3}}->{{4}}->{{9}}->{{1}}->NULL'
 
 
+
+# Where k is greater than the length of the linked list
+
+def test_ll_greater_than_the_length(fixed_list):
+    assert fixed_list.kthFromEnd(9) == f'Sorry Your Input Is Out Of Range'
+
+# Where k and the length of the list are the same
+
+def test_ll_length_of_same(fixed_list):
+    assert fixed_list.kthFromEnd(3) == f'Sorry Your Input Is Out Of Range'
+
+# Where k is not a positive integer
+
+def test_ll_not_a_positive(fixed_list):
+    assert fixed_list.kthFromEnd(-3) == 'Sorry Do Not Accept Negative Values'
+
+# “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+def test_ll_kthFromEnd_1(fixed_list):
+    assert fixed_list.kthFromEnd(2) == 3
+
+def test_ll_kthFromEnd_2(fixed_list):
+    assert fixed_list.kthFromEnd(0) == 9
+
+
+
 @pytest.fixture
 def fixed_list():
         ll=LinkedList()
