@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/hadeaji/.pyenv/shims/python"
+    "python.pythonPath": "/home/hadeaji/.pyenv/shims/python",
+    "python.formatting.provider": "yapf"
 }

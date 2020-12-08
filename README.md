@@ -103,7 +103,7 @@ Implement a function that finds a value from a LL starting the index numbering f
 
 ## Approach & Efficiency
 To do so I looped over the LL then converting it to normal list then reversed the list
-time=>O(n) space=>O(n)
+time=>O(2n) space=>O(n)
 
 ## API
 I looped over the LL then converting it to normal list by assigning the values to a variable then reversed the list using basic method then called the item using the index value given
