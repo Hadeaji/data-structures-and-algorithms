@@ -122,31 +122,43 @@ def zipLists(ll1,ll2):
     current1 = ll1.head
     current2 = ll2.head
     while current1 != None or current2 != None:
-        if current1 != None:
-            if current2 != None:
+        
+        if current2 != None:
 
-                ll1.insertAfter(current1.value,current2.value)
-                current2 = current2.next
-                current1 = current1.next
-                current1 = current1.next
+            ll1.insertAfter(current1.value,current2.value)
+            current2 = current2.next
+            current1 = current1.next
+        
+        if current1.next != None:
+            current1 = current1.next
+
+        if current1.next == None and current2 == None:
+            current1 = current1.next
 
         if current1 == None:
             return ll1
 
 import pytest
 
-# “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
-
+#####################################################################
 def test_ll_zip_1(fixed_list_1,fixed_list_2):
+    fixed_list_1.append(2)
+    fixed_list_2.append(4)
     assert str(zipLists(fixed_list_1,fixed_list_2)) == '{1}->{5}->{3}->{9}->{2}->{4}->NULL'
 
+def test_ll_zip_2(fixed_list_1,fixed_list_2):
+    fixed_list_2.append(4)
+    assert str(zipLists(fixed_list_1,fixed_list_2)) == '{1}->{5}->{3}->{9}->{4}->NULL'
+
+def test_ll_zip_3(fixed_list_1,fixed_list_2):
+    fixed_list_1.append(2)
+    assert str(zipLists(fixed_list_1,fixed_list_2)) == '{1}->{5}->{3}->{9}->{2}->NULL'
 
 @pytest.fixture
 def fixed_list_1():
     ll1=LinkedList()
     ll1.append(1)
     ll1.append(3)
-    ll1.append(2)
     
     return ll1 
 
@@ -155,6 +167,5 @@ def fixed_list_2():
     ll2=LinkedList()
     ll2.append(5)
     ll2.append(9)
-    ll2.append(4)
 
     return ll2

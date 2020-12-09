@@ -108,3 +108,18 @@ time=>O(2n) space=>O(n)
 ## API
 I looped over the LL then converting it to normal list by assigning the values to a variable then reversed the list using basic method then called the item using the index value given
 
+----------------------------------------------------------------------
+
+# 8- Zip two linked lists
+Chainning the LL's by taking 1 value from each repetedly and link then togather
+
+## Challenge Description
+channing the linked lists without using helper functions or creating new LL
+
+## Approach & Efficiency
+To do so I looped till both the LL's reachs None while appending items
+time=>O(2n) space=>O(1)
+
+## API
+To do so I looped till both the LL's reachs None while appending items
+![image](assets/ll_zip.jpeg)
