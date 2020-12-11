@@ -10,6 +10,9 @@
 | *Challenge05* |[Singly Linked List](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
 | *Challenge06* |[Linked list insertions](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
 | *Challenge07* |[Value From The End Of LL](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/linked_list/linked_list.py)|
+| *Challenge08* |[Zip two linked lists](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/ll_zip/ll_zip.py)|
+| *Challenge09* |**WhitBoard Exam**|
+| *Challenge10* |[Stacks and Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)|
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -126,7 +129,7 @@ To do so I looped till both the LL's reachs None while appending items
 
 ----------------------------------------------------------------------
 
-# 9- Stacks and Queues
+# 10- Stacks and Queues
 A stack is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
 
 A queue is an ordered collection of items where the addition of new items happens at one end, called the rear
