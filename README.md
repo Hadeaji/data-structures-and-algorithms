@@ -163,3 +163,29 @@ Create a Queue class:
 - enqueue append new node to the end by using the rear and set the next value to it then set the rear
 - dequeue removes the front value returns itand set the front to the next of it
 - peek return the value of the front
+
+----------------------------------------------------------------------
+
+# 11- PseudoQueue
+Implement a Queue using two Stacks.
+
+## Challenge Description
+utilaize 2 stacks to Implement a Queue methods using first-in, first-out approach.
+
+## Approach & Efficiency
+In the enqueue add to the top of the first stack, time=>O(1) space=>O(1)
+
+In the dequeue used 2 loops and copied stack 2 to a variable, time=>O(2n) space=>O(n)
+
+## API
+In the enqueue add to the top of the first stack simple as that
+
+In the dequeue pop for the num of the items in the s1 pop them and push them to the empty s2 resulting in a reversed s1 in the s2
+
+after that save the value of poping from s2
+
+pop the rest of the s2 to s1
+
+then return the saved value
+
+in case there is no items in s1 send the error message
