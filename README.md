@@ -14,6 +14,7 @@
 | *Challenge09* |**WhitBoard Exam**|
 | *Challenge10* |[Stacks and Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)|
 | *Challenge11* |[Stacks with Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_with_queues/stacks_with_queues.py)|
+| *Challenge12* |[Animal Shelter](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/fifo_animal_shelter/fifo_animal_shelter.py)|
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -191,3 +192,23 @@ pop the rest of the s2 to s1
 then return the saved value
 
 in case there is no items in s1 send the error message
+
+----------------------------------------------------------------------
+
+# 12- Animal Shelter
+Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+And Data can be recogonized if a Dog or Cat
+
+## Challenge Description
+Implement the following methods:
+enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+
+So when you dequeue(Dog) a Dog should go out of the Queue in the Queue order
+
+## Approach & Efficiency
+for enqueue(animal) it is a normal enqueue just appends to the Queue
+for dequeue(pref) it will check for front if not it will loop on current.next till if finds it
+
+## Solution
+![image](assets/AnimalShelter.png)
