@@ -15,7 +15,7 @@
 | *Challenge10* |[Stacks and Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)|
 | *Challenge11* |[Stacks with Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_with_queues/stacks_with_queues.py)|
 | *Challenge12* |[Animal Shelter](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/fifo_animal_shelter/fifo_animal_shelter.py)|
-
+| *Challenge12* |[Multi-bracket Validation](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/multi_bracket_validation/multi_bracket_validation.py)|
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -212,3 +212,17 @@ for dequeue(pref) it will check for front if not it will loop on current.next ti
 
 ## Solution
 ![image](assets/AnimalShelter.png)
+
+----------------------------------------------------------------------
+
+# 13- Multi-bracket Validation
+checks if the brackets in a given 
+
+## Challenge Description
+function take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced
+
+## Approach & Efficiency
+function creats one Stack then while looping in the string it passes the openning brackets to the stack and for every closing one it should match the last pushed openning kind
+
+## Solution
+![image](assets/Multi-bracket-Validation.jpg)
