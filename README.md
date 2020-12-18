@@ -15,7 +15,9 @@
 | *Challenge10* |[Stacks and Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_and_queues/stacks_and_queues.py)|
 | *Challenge11* |[Stacks with Queues](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/stacks_with_queues/stacks_with_queues.py)|
 | *Challenge12* |[Animal Shelter](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/fifo_animal_shelter/fifo_animal_shelter.py)|
-| *Challenge12* |[Multi-bracket Validation](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/multi_bracket_validation/multi_bracket_validation.py)|
+| *Challenge13* |[Multi-bracket Validation](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/multi_bracket_validation/multi_bracket_validation.py)|
+| *Challenge14* | **WhitBoard Exam** |
+| *Challenge15* |[Trees](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -226,3 +228,36 @@ function creats one Stack then while looping in the string it passes the opennin
 
 ## Solution
 ![image](assets/Multi-bracket-Validation.jpg)
+
+----------------------------------------------------------------------
+
+# 15- Trees
+A Tree is a data structure that consists of Nodes that form a tree like shape 
+
+Binary Trees is where every node has 2 childs at max
+
+## Challenge Description
+Create a BinaryTree class
+Define a method for each of the 3 depths:
+
+- preOrder
+- inOrder
+- postOrder
+
+Create a BinarySearchTree class
+Define a method named add that adds a new node with value to tree.
+Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+## Approach & Efficiency
+created a preOrder,inOrder and postOrder methods that uses recursion big O(2^n)
+
+created add and contains methods that uses recursion big O(2^n) also
+## API
+created a preOrder,inOrder and postOrder methods
+first assign empty array
+then It loops over the tree by going to the root append if preorder goes to the left node if exist and use the uses recursion then append if inorder then go to right if exist and uses recursion then append if postorder
+
+In add it will assign root if it does not exist else will assign cueent as root then check if it is eqaul bigger or smaller than the current
+and add to it if not exist alse will navigate to the left or right
+
+same method applies to contain
