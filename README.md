@@ -18,6 +18,7 @@
 | *Challenge13* |[Multi-bracket Validation](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/multi_bracket_validation/multi_bracket_validation.py)|
 | *Challenge14* | **WhitBoard Exam** |
 | *Challenge15* |[Trees](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
+| *Challenge16* |[Maximum Value](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -261,3 +262,20 @@ In add it will assign root if it does not exist else will assign cueent as root 
 and add to it if not exist alse will navigate to the left or right
 
 same method applies to contain
+
+----------------------------------------------------------------------
+
+# 16- Maximum Value
+Find the Maximum Value in a Binary Tree
+
+## Challenge Description
+Find the Maximum Value in a Binary Tree without using buildins assuming all elements are numbers
+
+## Approach & Efficiency
+Created a value called max that is equal to the root then used one of the depth methods to itirate to tree while comparing
+
+Big O of time --> O(2^n)
+Big O of space --> O(1)
+
+## API
+Created a value called max that is equal to the root then used preOrder methods to itirate to tree Nodes values, compare with the value saved in max then replace it if it is bigger then after the recursion ends i will have the max as the really max value in the tree and will return it 
