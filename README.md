@@ -19,7 +19,7 @@
 | *Challenge14* | **WhitBoard Exam** |
 | *Challenge15* |[Trees](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 | *Challenge16* |[Maximum Value](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
-
+| *Challenge17* |[Breadth First](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -279,3 +279,22 @@ Big O of space --> O(1)
 
 ## API
 Created a value called max that is equal to the root then used preOrder methods to itirate to tree Nodes values, compare with the value saved in max then replace it if it is bigger then after the recursion ends i will have the max as the really max value in the tree and will return it 
+
+![image](assets/max.jpg)
+
+----------------------------------------------------------------------
+
+# 17- Breadth First
+Breadth-first Traversal throught the tree
+
+## Challenge Description
+Write a breadth first traversal method Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach & Efficiency
+Created an empty list called output that you append values of tree node when you dequeue the node you enqueued to the new queue you created at the first
+
+Big O of time --> O(2^n)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/breadth.jpg)
