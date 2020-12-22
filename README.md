@@ -20,6 +20,7 @@
 | *Challenge15* |[Trees](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 | *Challenge16* |[Maximum Value](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 | *Challenge17* |[Breadth First](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
+| *Challenge18* |[FizzBuzz Tree](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -298,3 +299,25 @@ Big O of space --> O(n)
 
 ## Solution
 ![image](assets/breadth.jpg)
+
+----------------------------------------------------------------------
+
+# 18- fizzBuzz Tree
+takes a k-ary tree as an argument 
+
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## Challenge Description
+Write the fizzBuzz Tree function and apply it on the argumnt trees with using build in functions
+
+## Approach & Efficiency
+copied the tree to a variable the used the depth method to tranverse through while changing values of nodes
+
+Big O of time --> O(2^n)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/FizzBuzz.jpg)
