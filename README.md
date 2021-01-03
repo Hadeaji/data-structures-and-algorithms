@@ -21,6 +21,8 @@
 | *Challenge16* |[Maximum Value](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 | *Challenge17* |[Breadth First](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/tree/tree.py)|
 | *Challenge18* |[FizzBuzz Tree](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)|
+| *Project* | **too many numbers skipped** |
+| *Challenge26* |[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -321,3 +323,23 @@ Big O of space --> O(n)
 
 ## Solution
 ![image](assets/FizzBuzz.jpg)
+
+----------------------------------------------------------------------
+
+# 26- Insertion Sort
+Insertion Sort is a sorting algorithm that traverses the array multiple times as it slowly builds out the sorting sequence
+
+## Challenge Description
+Write a function that sorts an array without using built-in methods
+
+## Approach & Efficiency
+itterates thro the array elements and comparing each one with the one after then reversing order if it applys the statment
+
+Big O of time --> O(2^n)
+Big O of space --> O(1)
+
+## Solution
+![image](assets/Insertion-Sort.jpg)
+
+## Blog
+[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/insertion_sort/BLOG.md)
