@@ -20,6 +20,11 @@ just assign the variables inside the first loop and outside the next one
 
 do the statments inside and dont forget to iterrate to next values inside the loop after the statment
 
+Trace:
+
+Sample array: [8,4,23,42,16,15]
+
+
 example code:
 
 ```
@@ -39,3 +44,13 @@ def insertion_sort(arr):
         arr[min_] = arr[i]
         arr[i] = temp
 ```
+
+![image](../../../assets/b1.jpg)
+
+![image](../../../assets/b2.jpg)
+
+![image](../../../assets/b3.jpg)
+
+![image](../../../assets/b4.jpg)
+
+![image](../../../assets/b5.jpg)
