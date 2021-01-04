@@ -14,7 +14,7 @@ def insertion_sort(arr):
         arr[min_] = arr[i]
         arr[i] = temp
 
-if __name__ == "__main__":
-    h = [52,1,2,5,44,6,7,8]
-    insertion_sort(h)
-    print(h)
+# if __name__ == "__main__":
+#     h = [52,1,2,5,44,6,7,8]
+#     insertion_sort(h)
+#     print(h)
