@@ -51,6 +51,14 @@ def insertion_sort(arr):
 
 ![image](../../../assets/b3.jpg)
 
+```
+Basicly in this step 23 gets saved and the n compared with each value after it one by one
+
+after cgecking it with 42 it stills the same then checks with 16 it is smaller than it so the min value changes but because we still inside the loop and there is still more numbers to test it will check them
+
+after checking with last value (15) it is appeard to be smaller so it will change the min value, bestored in the temp and being swaped places with 23 bu assignning array index to new values 
+```
+
 ![image](../../../assets/b4.jpg)
 
 ![image](../../../assets/b5.jpg)
