@@ -23,6 +23,9 @@
 | *Challenge18* |[FizzBuzz Tree](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/fizz_buzz_tree/fizz_buzz_tree.py)|
 | *Project* | **too many numbers skipped** |
 | *Challenge26* |[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)|
+| *Challenge27* |[Merge Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)|
+| *Challenge28* |[Quick Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)|
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -359,7 +362,27 @@ Big O of time --> O(n*log(n))
 Big O of space --> O(1)
 
 ## Solution
-![image](assets/merge_sort.jpg.jpg)
+![image](assets/merge_sort.jpg)
 
 ## Blog
 [Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/merge_sort/BLOG.md)
+
+----------------------------------------------------------------------
+
+# 28- Quick Sort
+QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot
+
+## Challenge Description
+Write a function that uses Quick Sort an array without using built-in methods
+
+## Approach & Efficiency
+selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+Big O of time --> O(log(n))
+Big O of space --> O(1)
+
+## Solution
+![image](assets/quick_sort_w.jpg)
+
+## Blog
+[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/quick_sort/BLOG.md)
