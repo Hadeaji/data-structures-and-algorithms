@@ -359,7 +359,7 @@ Big O of time --> O(n*log(n))
 Big O of space --> O(1)
 
 ## Solution
-![image](assets/merge_sort.jpg.jpg)
+![image](assets/merge_sort.jpg)
 
 ## Blog
 [Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/merge_sort/BLOG.md)
