@@ -25,7 +25,7 @@
 | *Challenge26* |[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)|
 | *Challenge27* |[Merge Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)|
 | *Challenge28* |[Quick Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)|
-
+| *Challenge29* |[Hash Tables](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/hashtable/hashtable.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
