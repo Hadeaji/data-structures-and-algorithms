@@ -25,7 +25,9 @@
 | *Challenge26* |[Insertion Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/insertion_sort/insertion_sort.py)|
 | *Challenge27* |[Merge Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/merge_sort/merge_sort.py)|
 | *Challenge28* |[Quick Sort](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/quick_sort/quick_sort.py)|
-| *Challenge29* |[Hash Tables](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/hashtable/hashtable.py)|
+| *Challenge29* | **WhitBoard Exam** |
+| *Challenge30* |[Hash Tables](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/hashtable/hashtable.py)|
+| *Challenge31* |[Repeated Word](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -389,7 +391,7 @@ Big O of space --> O(1)
 
 ----------------------------------------------------------------------
 
-# 29- Hash Tables
+# 30- Hash Tables
 The basic idea of a hashtable is the ability to store the key into this data structure, and quickly retrieve the value. This is done through what we call a hash. A hash is the ability to encode the key that will eventually map to a specific location in the data structure that we can look at directly to retrieve the value.
 
 ## Challenge Description
@@ -406,3 +408,20 @@ add method that takes in both the key and value and add them to their location
 get method that takes in the key and returns the value from the table.
 contains method that takes in the key and returns a boolean, indicating if the key exists in the table already.
 hash method that is being used by other metods to know or decide the location of the values
+
+----------------------------------------------------------------------
+
+# 31- Repeated Word
+Find the first repeated word in a given string by comparing word by word till you find the first repeated one
+
+## Challenge Description
+Find the first repeated word in a given string.
+
+## Approach & Efficiency
+created empty array,passed string words to it one bye one while checking if the word is already there
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/repeated-word.jpg)
