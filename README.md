@@ -28,6 +28,7 @@
 | *Challenge29* | **WhitBoard Exam** |
 | *Challenge30* |[Hash Tables](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/hashtable/hashtable.py)|
 | *Challenge31* |[Repeated Word](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)|
+| *Challenge32* |[Tree Intersection](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -425,3 +426,20 @@ Big O of space --> O(n)
 
 ## Solution
 ![image](assets/repeated-word.jpg)
+
+----------------------------------------------------------------------
+
+# 31- Tree Intersection
+Find common values in 2 binary trees by navigation to values and checking them
+
+## Challenge Description
+write function that finds common values in 2 binary trees without using built in methods
+
+## Approach & Efficiency
+using the one of the tranversal methods in trees getting a list of values from tree 1 and tree 2 then checking the 2 arrays for common values and appending it to an temp array then return it
+
+Big O of time --> O(n)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/ins-tree.jpg)
