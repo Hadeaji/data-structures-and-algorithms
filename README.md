@@ -29,6 +29,7 @@
 | *Challenge30* |[Hash Tables](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/hashtable/hashtable.py)|
 | *Challenge31* |[Repeated Word](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/repeated_word/repeated_word.py)|
 | *Challenge32* |[Tree Intersection](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)|
+| *Challenge33* |[LeftJoin](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/left_join/left_join.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -429,7 +430,7 @@ Big O of space --> O(n)
 
 ----------------------------------------------------------------------
 
-# 31- Tree Intersection
+# 32- Tree Intersection
 Find common values in 2 binary trees by navigation to values and checking them
 
 ## Challenge Description
@@ -443,3 +444,20 @@ Big O of space --> O(n)
 
 ## Solution
 ![image](assets/ins-tree.jpg)
+
+----------------------------------------------------------------------
+
+# 33- Left Join
+LEFT JOIN returns all rows from the left table, even if there are no matches in the right table. This means that if the ON clause matches 0 (zero) records in the right table; the join will still return a row in the result, but with NULL in each column from the right table
+
+## Challenge Description
+Implement a simplified LEFT JOIN for 2 Hashmaps
+
+## Approach & Efficiency
+getting keys of the first hashmap then append it with its values as any array to and empty array then for every key search if the other one caontains it if yes append the value for the array
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/left_join.jpg)
