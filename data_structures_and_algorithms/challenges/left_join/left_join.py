@@ -77,3 +77,34 @@ class Hashtable:
         pointer *= 199
         pointer %= self.size
         return pointer
+
+
+def left_join(hashtabi1,hashtabi2):
+    _list = []
+    for i in hashtabi1.map:
+        if i != None:
+            current = i.head
+            while current:
+                _list += [[current.key, current.value],]
+                current = current.next
+
+    for i in _list:
+        if hashtabi2.contains(i[0]) == True:
+            print('tr',i[0])
+            val = hashtabi2.get(i[0])
+            i.append(val)
+        else:
+            i.append(None)
+
+    return _list
+
+
+if __name__ == "__main__":
+    test = Hashtable(1024)
+    test.add('flow', 'jam')
+
+    test2 = Hashtable(1024)
+    test2.add('fond', 'averse')
+    test2.add('guide', 'follow')
+
+    print(left_join(test,test2))
