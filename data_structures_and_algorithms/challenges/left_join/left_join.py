@@ -90,7 +90,7 @@ def left_join(hashtabi1,hashtabi2):
 
     for i in _list:
         if hashtabi2.contains(i[0]) == True:
-            print('tr',i[0])
+
             val = hashtabi2.get(i[0])
             i.append(val)
         else:
