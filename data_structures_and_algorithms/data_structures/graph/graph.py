@@ -112,7 +112,7 @@ class Graph:
         while len(temp) >0:
             front_node = temp.pop(0)
             nodes.add(front_node)
-            
+
             for i in self.adjacency_list.keys():
                 if str(i.value) == str(front_node):
                     values.append(self.adjacency_list[i])
@@ -126,23 +126,59 @@ class Graph:
             else:
                 return False
         return nodes
+    
+    def path_in_two(self,node1,node2):
+        list1 = self.get_neighbours(node1)
+        list2 = self.get_neighbours(node2)
+
+        if type(list1) != list or type(list2) != list:
+            return "Invaild Input"
+        else:
+            check = False
+            for i in list1:
+                if i[1] == node2:
+                    check = True  
+            if check == False:
+                for j in list2:
+                    if j[1] == node1:
+                        check = True
+            
+            return check
+                
+
+
+    # def bfs(self, start_node):
+    #     nodes = []  # O(1)
+    #     visited = set() # History of visited nodes # O(1)
+    #     breadth = Queue() # O(1)
+    #     breadth.enqueue(start_node) # O(1)
+    #     visited.add(start_node) # O(1)
+    #     while len(breadth)>0: # O(n)
+    #         node = breadth.dequeue() # O(1)
+    #         nodes.append(node) # O(1)
+    #         for n in self.adjacency_list[node]: # O(n)
+    #             if n not in visited: # O(1)
+    #                 breadth.enqueue(n) # O(1)
+    #                 visited.add(n) # O(1)
+    #     return nodes
 
 if __name__=='__main__':
-    d = Graph()
-    d.add_node('a')
-    d.add_node('b')
-    d.add_node('c')
-    d.add_node('d')
-    d.add_edge('a','b',4)
-    d.add_edge('a','d',9)
-    d.add_edge('a','c',3)
-    d.add_edge('b','a',4)
-    d.add_edge('c','a',3)
-    d.add_edge('c','d',6)
-    d.add_edge('d','a',9)
-    d.add_edge('d','b',5)
-    d.add_edge('d','c',6)
-    print(d.get_nodes())
-    # print(d.get_neighbours('a'))
+    test1 = Graph()
+    test1.add_node('a')
+    test1.add_node('b')
+    test1.add_node('c')
+    test1.add_node('d')
+    test1.add_node('x')
+    test1.add_edge('a','b',4)
+    test1.add_edge('a','d',9)
+    test1.add_edge('a','c',3)
+    test1.add_edge('b','a',4)
+    test1.add_edge('c','a',3)
+    test1.add_edge('c','d',6)
+    test1.add_edge('d','a',9)
+    test1.add_edge('d','b',5)
+    test1.add_edge('d','c',6)
+    # print(test1.get_nodes())
+    print(test1.path_in_two('a','x'))
     # print(d.size())
     # print(d.get_neighbours('v'))

@@ -467,8 +467,7 @@ Big O of space --> O(n)
 
 ----------------------------------------------------------------------
 
-# 33- Graphs
-
+# 35- Graphs
 A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
 
 ## Challenge Description
@@ -502,3 +501,29 @@ Include the weight of the connection in the returned collection
 
 **Size():**
 Returns the total number of nodes in the graph
+
+----------------------------------------------------------------------
+
+# 36- Graphs- path_in_two
+A Graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
+
+## Challenge Description
+Implement a breadth-first traversal on a graph.
+
+And define a new method that accepts two nodes as input and uses your traversal algorithm to determine if a path exists between the two nodes.
+
+## Approach & Efficiency
+getting 2 nodes and check there Neighbors by using the method and if one exist in the other return true
+
+Big O of time --> O(n)
+Big O of space --> O(1)
+
+## API
+getting 2 nodes and check there Neighbors by using the method
+create 2 lists of the Neighbors for both of the nodes
+
+check if the first node is a Neighbors for the other one by looping over the first list
+
+check if the second node is a Neighbors for the other one by looping over the second list
+
+and if one exist in the other return true
