@@ -22,6 +22,14 @@ def test_custom_graph():
     assert test2.size() == 1
     assert test2.get_neighbours('x') == 'Node does not exist'
 
+def test_path_in_two(graph_test):
+    graph_test.add_node('y')
+    assert graph_test.path_in_two('a','x') == 'Invaild Input'
+    assert graph_test.path_in_two('a','y') == False
+    assert graph_test.path_in_two('a','b') == True
+
+
+
 
 @pytest.fixture
 def graph_test():
