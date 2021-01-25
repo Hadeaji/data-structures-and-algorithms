@@ -31,8 +31,8 @@
 | *Challenge32* |[Tree Intersection](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/tree_intersection/tree_intersection.py)|
 | *Challenge33* |[LeftJoin](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/left_join/left_join.py)|
 | *Challenge34* | **WhitBoard Exam** |
-| *Challenge35* |[Graphs](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/graphs/graphs.py)|
-
+| *Challenge35+36* |[Graphs](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/data_structures/graphs/graphs.py)|
+| *Challenge37* |[Find Edges](https://github.com/Hadeaji/data-structures-and-algorithms/blob/master/data_structures_and_algorithms/challenges/get_edge/get_edge.py)|
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 # 1- Reverse an Array
@@ -527,3 +527,20 @@ check if the first node is a Neighbors for the other one by looping over the fir
 check if the second node is a Neighbors for the other one by looping over the second list
 
 and if one exist in the other return true
+
+----------------------------------------------------------------------
+
+# 37- Find Edges
+Find the edges between given nodes in graph and return true and their width total if there is a connection else retrn false
+
+## Challenge Description
+Write a function based on the specifications above, which takes in a graph, and an array of city names. Without utilizing any of the built-in methods available to your language, return whether the full trip is possible with direct flights, and how much it would cost.
+
+## Approach & Efficiency
+got the graph and the nodes in the function then looping over the nodes array getting the Neighbors then checking if the next node is in first node list and add to the total
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## Solution
+![image](assets/get_edge.jpg)
